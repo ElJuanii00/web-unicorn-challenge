@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Unicorn Website</title>
 </head>
@@ -17,37 +18,41 @@
             <a class="icon-youtube" href=""></a>
         </div>
     </aside>
-    <header class="header">
-        <ol>
+    <header class="header" id="inicio">
+        <ol class="nav">
             <li>
-                <a href="">Inicio</a>
+                <a href="#inicio">Inicio</a>
             </li>
             <li>
-                <a href="">Sobre Mi</a>
+                <a href="#about_me">Sobre Mi</a>
             </li>
             <li>
-                <a href="">Portafolio</a>
+                <a href="#portafolio">Portafolio</a>
             </li>
         </ol>
-        <div class="container">
+        <div class="container content_header">
             <h1>Unicornio Web Profesional</h1>
-            <img src="icons/image.png" alt="">
+            <figure>
+                <img src="icons/image.png" alt="">
+            </figure>
         </div>
     </header>
     <section class="hero">
-        <div>
-            <img src="icons/development.png" alt="">
-            <h3>Desarrollo Web</h3>
-            <p>HTML + CSS + Responsive Design</p>
+        <div class="container">
+                <div>
+                    <img src="icons/development.png" alt="">
+                    <h3>Desarrollo Web</h3>
+                    <p>HTML + CSS + Responsive Design</p>
+                </div>
+                <div>
+                    <img src="icons/development.png" alt="">
+                    <h3>Diseño Web</h3>
+                    <p>UI/UX + Adobe XD/Figma + Zeplin</p>
+                </div>
+                <img src="icons/rocket.png" alt="">
         </div>
-        <div>
-            <img src="icons/development.png" alt="">
-            <h3>Diseño Web</h3>
-            <p>UI/UX + Adobe XD/Figma + Zeplin</p>
-        </div>
-        <img src="icons/rocket.png" alt="">
     </section>
-    <section class="about_me">
+    <section class="about_me" id="about_me">
         <div class="container">
             <h2>Sobre mí</h2>
             <div>
@@ -56,7 +61,7 @@
             </div>
         </div>
     </section>
-    <section class="projects">
+    <section class="projects" id="portafolio">
         <div class="container">
             <h2>Proyectos</h2>
             <figure>

@@ -21,6 +21,15 @@ body{
     box-sizing: border-box;
 }
 
+figure{
+    margin: 0;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+
 :root{
     --color_backgroundWhite: #FCFCFC;
     --color_backgroundRed: #E92042;

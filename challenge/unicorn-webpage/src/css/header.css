@@ -1,3 +1,41 @@
 .header{
     grid-area: header;
 }
+.nav{
+    padding: 1rem 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    & li{
+        list-style: none;
+        & a{
+            text-decoration: none;
+            color: var(--color_font);
+            font-weight: regular;
+        }
+    }
+    & li:not(:last-child){
+        margin-right: 4rem;
+    }
+}
+
+.content_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    & h1{
+        font-size: 4rem;
+    }
+
+    & figure{
+        background-color: var(--color_backgroundRed);
+        padding: 5rem;
+        & img{
+            width: 4rem;
+        }
+    }
+}
