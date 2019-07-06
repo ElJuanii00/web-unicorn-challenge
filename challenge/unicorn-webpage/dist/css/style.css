@@ -1,0 +1,119 @@
+/* basics */
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    grid-template-areas: "header_aside header"
+    "header_aside hero"
+    ". about_me"
+    ". projects"
+    ". footer";
+    background: #F7FCFF;
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?gp1dkd');
+    src:  url('../fonts/icomoon.eot?gp1dkd#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?gp1dkd') format('truetype'),
+      url('../fonts/icomoon.woff?gp1dkd') format('woff'),
+      url('../fonts/icomoon.svg?gp1dkd#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-feature-settings: normal;
+            font-feature-settings: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+.icon-instagram:before {
+    content: "\ea92";
+  }
+.icon-whatsapp:before {
+    content: "\ea93";
+  }
+.icon-twitter:before {
+    content: "\ea96";
+  }
+.icon-youtube:before {
+    content: "\ea9d";
+  }
+.header_aside{
+    grid-area: header_aside;
+    background-color: #FCFCFC;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    padding: 1rem;
+    
+    box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.5)
+}
+.header_aside .logo{
+        width: 5rem;
+        height: 5rem;
+        background-image: url(../icons/unicorn.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 4rem;
+    }
+.social_media{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    flex-wrap: wrap;
+    width: 5rem
+}
+.social_media a{
+        font-size: 2rem;
+        text-decoration: none;
+        color: #A4ADBE;
+        margin-bottom: 2rem;
+    }
+.header{
+    grid-area: header;
+}
+.hero{
+    grid-area: hero;
+}
+.about_me{
+    grid-area: about_me;
+}
+.projects{
+    grid-area: projects;
+}
+.footer{
+    grid-area: footer;
+}

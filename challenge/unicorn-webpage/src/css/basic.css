@@ -1,0 +1,30 @@
+/* basics */
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    grid-template-areas: "header_aside header"
+    "header_aside hero"
+    ". about_me"
+    ". projects"
+    ". footer";
+    background: var(--color_backgroundHero);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root{
+    --color_backgroundWhite: #FCFCFC;
+    --color_backgroundRed: #E92042;
+    --color_backgroundHero: #F7FCFF;
+
+    --color_font: #1B1B41;
+}

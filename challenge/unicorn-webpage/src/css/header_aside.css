@@ -1,0 +1,36 @@
+.header_aside{
+    grid-area: header_aside;
+    background-color: var(--color_backgroundWhite);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    
+    box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.5);
+    & .logo{
+        width: 5rem;
+        height: 5rem;
+        background-image: url(../icons/unicorn.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 4rem;
+    }
+}
+
+.social_media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 5rem;
+
+
+    & a{
+        font-size: 2rem;
+        text-decoration: none;
+        color: var(--color_backgroundGray);
+        margin-bottom: 2rem;
+    }
+}
