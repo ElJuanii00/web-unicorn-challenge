@@ -5,4 +5,7 @@
     --color_backgroundHero: #F7FCFF;
 
     --color_font: #1B1B41;
+    --color_fontGray: #6c6c7a;
+
+    --color_boxshadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
 }

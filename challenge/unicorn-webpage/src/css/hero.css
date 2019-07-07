@@ -5,6 +5,7 @@
     & .rocket_icon{
         margin: -2rem 0 0 auto;
         display: block;
+        width: 15rem;
     }
 }
 
@@ -17,7 +18,7 @@
     grid-column-gap: 1rem;
     padding: 1.5rem;
     background-color: var(--color_backgroundWhite);
-    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: var(--color_boxshadow);
     width: fit-content;
 
     & img{
@@ -37,7 +38,7 @@
         display: block;
         grid-area: skill;
         margin: 0;
-        color: var(--color_font);
+        color: var(--color_fontGray);
         font-weight: normal;
         font-size: 1.2rem;
         align-self: end;

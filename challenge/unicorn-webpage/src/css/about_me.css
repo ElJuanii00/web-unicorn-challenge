@@ -1,3 +1,26 @@
 .about_me{
     grid-area: about_me;
+
+    & .about_info{
+        padding: 2rem;
+        background-color: var(--color_backgroundWhite);
+        width: fit-content;
+        box-shadow: var(--color_boxshadow);
+
+        & p{
+            font-size: 1.2rem;
+            color: var(--color_fontGray);
+            font-weight: normal;
+        }
+
+        & p:nth-of-type(2){
+            color: var(--color_font);
+            font-weight: bold;
+            margin-left: 1rem;
+        }
+
+        & p:nth-of-type(3){
+            margin-left: 1rem;
+        }
+    }
 }

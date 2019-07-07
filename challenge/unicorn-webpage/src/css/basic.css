@@ -30,10 +30,8 @@ figure{
     margin: 0 auto;
 }
 
-:root{
-    --color_backgroundWhite: #FCFCFC;
-    --color_backgroundRed: #E92042;
-    --color_backgroundHero: #F7FCFF;
-
-    --color_font: #1B1B41;
+.title{
+    color: var(--color_font);
+    font-size: 4rem;
+    font-weight: bold;
 }
