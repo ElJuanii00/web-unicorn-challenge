@@ -24,3 +24,11 @@
         }
     }
 }
+
+@media (--extra-small){
+    .about_me{
+        & .title{
+            font-size: 3rem;
+        }
+    }
+}

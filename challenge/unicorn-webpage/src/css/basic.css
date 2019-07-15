@@ -17,6 +17,7 @@ body{
     background: var(--color_backgroundHero);
 }
 
+
 * {
     box-sizing: border-box;
 }
@@ -34,4 +35,37 @@ figure{
     color: var(--color_font);
     font-size: 4rem;
     font-weight: bold;
+}
+
+@media (--medium-portrait){
+    body{
+        grid-template-columns: 8rem 1fr;
+        grid-template-areas: "header_aside header"
+        "hero hero"
+        "about_me about_me"
+        "projects projects"
+        "footer footer";
+    }
+}
+
+@media (--small){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-areas: "header"
+        "hero"
+        "about_me"
+        "projects"
+        "footer";
+    }
+}
+
+@media (--extra-small){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-areas: "header"
+        "hero"
+        "about_me"
+        "projects"
+        "footer";
+    }
 }

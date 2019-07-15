@@ -92,3 +92,39 @@
     }
 }
 
+@media (--medium-portrait){
+    .projects{
+        & .projects_preview{
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 3rem;
+
+            & .project_content{
+                & p{
+                    font-size: 1.4rem;
+                }
+            }
+        }    
+    }
+}
+
+@media (--small){
+    .projects{
+        & .projects_preview{
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
+        }
+    }
+}
+
+@media (--extra-small){
+    .projects{
+        padding: 3rem 1rem;
+        & .title{
+            margin-top: 0;
+        }
+        & .projects_preview{
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
+        }
+    }
+}
